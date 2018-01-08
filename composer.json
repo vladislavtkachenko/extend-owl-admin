@@ -9,7 +9,6 @@
             "email": "vlad.os.011235@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php": ">=7.0.0",
         "laravelrus/sleepingowl": "4.*@dev"
