@@ -9,5 +9,6 @@ Route::group(
     function ()
     {
         Route::get('/server', "AdminController@server")->name('admin.server');
+        Route::get('/logs', 'AdminController@log')->name('admin.log');
     }
 );

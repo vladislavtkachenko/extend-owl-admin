@@ -13,13 +13,13 @@ For Laravel < 5.5 after updating composer, add the service provider to the provi
 `php artisan vendor:publish --provider="VladislavTkachenko\Admin\Providers\ExtendOwlAdminServiceProvider" --force`
 
 
-#### Usage
+### Usage
 
-##### Orderable block with {image, title, description} 
+#### Orderable block with {image, title, description} 
 
 `AdminFormElement::orderableBlock('content', 'Контент')`
 
-##### Orderable images (only image)
+#### Orderable images (only image)
 
 In model
 
@@ -29,6 +29,16 @@ In admin Section
 
 `AdminFormElement::orderableImages('content', 'Контент')`
 
-##### Server info page: add to the navigation in Admin/navigation.php
+#### Server info page: add to the navigation in Admin/navigation.php
 
-`(new Page())->setTitle('Сервер')->setIcon('fa fa-server')->setUrl('/admin/server'),`
+`(new Page())->setTitle('Server')->setIcon('fa fa-server')->setUrl('/admin/server')`
+
+#### Show Laravel logs files
+
+Set daily Laravel log in .env file
+
+`APP_LOG=daily`
+ 
+Add to the navigation in Admin/navigation.php
+
+`(new Page())->setTitle('Logs')->setIcon('fa fa-files-o')->setUrl('/admin/logs')`
