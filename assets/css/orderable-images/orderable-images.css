@@ -1,0 +1,30 @@
+.admin-image-game{
+    width: 200px;
+}
+
+.imageUploadMultiple .images-group{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.imageUploadMultiple .images-group .imageThumbnail .imageRemove {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+
+.thumbnail{
+    padding: 0;
+    height: 87%;
+    overflow: hidden;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+    height: 130px;
+}

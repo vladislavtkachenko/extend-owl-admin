@@ -4,7 +4,8 @@ namespace VladislavTkachenko\Admin\Providers;
 
 use AdminFormElement;
 use Illuminate\Support\ServiceProvider;
-use VladislavTkachenko\Admin\Components\OrderableBlock;
+use VladislavTkachenko\Admin\FormElements\OrderableBlock;
+use VladislavTkachenko\Admin\FormElements\OrderableImages;
 
 class ExtendOwlAdminServiceProvider extends ServiceProvider
 {
@@ -30,5 +31,6 @@ class ExtendOwlAdminServiceProvider extends ServiceProvider
         require __DIR__ . '/../routes/web.php';
 
         AdminFormElement::add('orderableBlock', OrderableBlock::class);
+        AdminFormElement::add('orderableImages', OrderableImages::class);
     }
 }

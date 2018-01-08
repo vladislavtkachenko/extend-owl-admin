@@ -8,19 +8,27 @@ For Laravel < 5.5 after updating composer, add the service provider to the provi
 
 `VladislavTkachenko\Admin\Providers\ExtendOwlAdminServiceProvider::class`
 
-
-
 #### Publish assets
 
 `php artisan vendor:publish --provider="VladislavTkachenko\Admin\Providers\ExtendOwlAdminServiceProvider" --force`
 
-#### Examples
 
-For orderable block with {image, title, description} 
+#### Usage
+
+##### Orderable block with {image, title, description} 
 
 `AdminFormElement::orderableBlock('content', 'Контент')`
 
+##### Orderable images (only image)
 
-Server info page: add to the navigation in Admin/navigation.php
+In model
+
+`protected $casts = [ 'content' => 'array' ];`
+
+In admin Section
+
+`AdminFormElement::orderableImages('content', 'Контент')`
+
+##### Server info page: add to the navigation in Admin/navigation.php
 
 `(new Page())->setTitle('Сервер')->setIcon('fa fa-server')->setUrl('/admin/server'),`

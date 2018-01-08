@@ -1,6 +1,6 @@
 <?php
 
-namespace VladislavTkachenko\Admin\Components;
+namespace VladislavTkachenko\Admin\FormElements;
 
 use Illuminate\Http\Request;
 use KodiCMS\Assets\Facades\Meta;
