@@ -1,0 +1,29 @@
+{
+    "name": "vladislavtkachenko/extend-owl-admin",
+    "description": "Extend Owl Admin",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "vladislavTkachenko",
+            "email": "vlad.os.011235@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0.0",
+        "laravelrus/sleepingowl": "4.*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "VladislavTkachenko\\Admin\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "VladislavTkachenko\\Admin\\Providers\\ExtendOwlAdminServiceProvider"
+            ]
+        }
+    }
+}

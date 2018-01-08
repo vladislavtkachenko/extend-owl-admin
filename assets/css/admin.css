@@ -1,0 +1,84 @@
+.sidebar-menu .treeview-menu>li>a {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.panel-heading{
+    height: 55px !important;
+}
+
+.sidebar-menu>li>a {
+    padding: 10px 5px 10px 15px !important;
+    display: block;
+}
+
+div.dataTables_wrapper div.dataTables_filter label {
+    margin-right: 6px;
+    margin-top: 6px;
+}
+
+div.dataTables_wrapper div.dataTables_info {
+    padding-left: 10px;
+}
+
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+    padding-right: 10px;
+}
+
+.span-filters{
+    font-size: 16px;
+}
+
+.label-default{
+    font-size: 15px;
+}
+
+.imageUploadMultiple .images-group{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.dataTables_length{
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.imageRemove {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.thumbnail{
+    padding: 0 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 0;
+}
+
+.tit{
+    width: 95%;
+    display: block;
+    margin: 10px auto;
+    padding: 2px 7px;
+}
+
+.desc{
+    width: 95%;
+    display: block;
+    margin: 0 auto 15px;
+    resize: none;
+    padding: 2px 7px;
+}
+
+
+.sidebar-menu>li>a {
+    padding: 8px 0 8px 15px !important;
+}

@@ -1,0 +1,43 @@
+.imageUploadMultiple .images-group{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.dataTables_length{
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.imageRemove {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.thumbnail{
+    padding: 0 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 0;
+}
+
+.tit{
+    width: 95%;
+    display: block;
+    margin: 10px auto;
+    padding: 2px 7px;
+}
+
+.desc{
+    width: 95%;
+    display: block;
+    margin: 0 auto 15px;
+    resize: none;
+    padding: 2px 7px;
+}
