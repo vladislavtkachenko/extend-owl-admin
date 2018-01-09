@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+}
+.full-height {
+    height: 100vh;
+}
+.mainButton {
+    background: #f1736a;
+    color: #fff;
+    font-size: 16px;
+    padding: 0 40px;
+    border: none;
+    cursor: pointer;
+}
+.authorization__inner {
+    background-color: #fff;
+    text-align: center;
+    color: #222b32;
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+.input-form__inputText {
+    margin: 0 auto 20px;
+    padding: 8px 0 8px 10px;
+    width: 85%;
+    border: 1px solid #e5e5e5;
+    font-size: 14px;
+}
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #ecf0f5;
+}
+.input-form__buttons{
+    margin-top: 5px;
+    display: inline-flex;
+}
+.authorization__tabs {
+    margin: 0 auto 30px;
+}
+
+.authorization{
+    width: 33%;
+}
+
+.checkbox label {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.checkbox{
+    padding-right: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.i-checks>i:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    transition: all .2s;
+}
+.i-checks>i {
+    width: 20px;
+    height: 20px;
+    line-height: 1;
+    border: 1px solid #cbd3da;
+    background-color: #fff;
+    margin-left: -20px;
+    margin-top: -3px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+    position: relative;
+}
+.i-checks input:checked+i {
+    border-color: #f1736a;
+}
+.i-checks input:checked+i:before {
+    left: 4px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    background-color: #f1736a;
+}
+.input-form__alert{
+    padding: 15px;
+    margin: 0 auto 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: 81%;
+}
+.input-form__alert_danger{
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+}
+.input-form__alert > ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+    padding-left: 10px;
+}
+.input-form__alert > ul > li {
+    font-size: 16px;
+}
+@media screen and (max-width: 1000px){
+    .authorization{
+        width: 57%;
+    }
+}
+@media screen and (max-width: 768px){
+    .authorization{
+        width: 77%;
+    }
+}
+@media screen and (max-width: 500px){
+    .authorization{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 400px){
+    .mainButton {
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width: 350px){
+    .mainButton {
+        padding: 0 10px;
+    }
+}
