@@ -10,6 +10,9 @@ Route::group(
     {
         Route::get('/server', "AdminController@server")->name('admin.server');
         Route::get('/logs', 'AdminController@log')->name('admin.log');
+
+        Route::get('/robots', 'AdminController@showRobots')->name('robots.get');
+        Route::post('/robots', 'AdminController@storeRobots')->name('robots.post');
     }
 );
 

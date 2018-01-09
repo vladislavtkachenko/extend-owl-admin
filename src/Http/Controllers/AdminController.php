@@ -3,6 +3,7 @@
 namespace VladislavTkachenko\Admin\Http\Controllers;
 
 use AdminSection;
+use Illuminate\Http\Request;
 use KodiCMS\Assets\Facades\Meta;
 use VladislavTkachenko\Admin\Providers\LogServiceProvider;
 
@@ -57,5 +58,32 @@ class AdminController
         ]);
 
         return AdminSection::view($content, 'Логи');
+    }
+
+    /**
+     * Форма редактирования Robots
+     * @return mixed
+     */
+    public function showRobots()
+    {
+        $robots = file_get_contents(public_path('robots.txt'));
+        $content = view('vladislavtkachenko::robots', compact('robots'));
+
+        return AdminSection::view($content, 'Редактирование robots.txt');
+    }
+
+    /**
+     * Сохранение Robots
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function storeRobots(Request $request)
+    {
+        $f = fopen(public_path('robots.txt'),'w');
+        fwrite($f, $request->get('robots'));
+        fclose($f);
+
+        return back()->with(['message' => 'Файл перезаписан']);
     }
 }

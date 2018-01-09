@@ -1,4 +1,4 @@
-### Install
+## Install
 
 `composer require vladislavtkachenko/extend-owl-admin`
 
@@ -8,18 +8,18 @@ For Laravel < 5.5 after updating composer, add the service provider to the provi
 
 `VladislavTkachenko\Admin\Providers\ExtendOwlAdminServiceProvider::class`
 
-#### Publish assets
+### Publish assets
 
 `php artisan vendor:publish --provider="VladislavTkachenko\Admin\Providers\ExtendOwlAdminServiceProvider" --force`
 
 
-### Usage
+## Usage
 
-#### Orderable block with {image, title, description} 
+### Orderable block with {image, title, description} 
 
 `AdminFormElement::orderableBlock('content', 'Контент')`
 
-#### Orderable images (only image)
+### Orderable images (only image)
 
 In model
 
@@ -29,11 +29,15 @@ In admin Section
 
 `AdminFormElement::orderableImages('content', 'Контент')`
 
-#### Server info page: add to the navigation in Admin/navigation.php
+### Server info page: add to the navigation in Admin/navigation.php
 
 `(new Page())->setTitle('Server')->setIcon('fa fa-server')->setUrl('/admin/server')`
 
-#### Show Laravel logs files
+### Edit robots.txt file
+
+`(new Page())->setTitle('Robots')->setIcon('fa fa-android')->setUrl('/admin/robots')`
+
+### Show Laravel logs files
 
 Set daily Laravel log in .env file
 
@@ -43,7 +47,7 @@ Add to the navigation in Admin/navigation.php
 
 `(new Page())->setTitle('Logs')->setIcon('fa fa-files-o')->setUrl('/admin/logs')`
 
-#### Auth
+### Auth
 
 Add middleware to the routeMiddleware array in app/Http/Kernel.php 
 

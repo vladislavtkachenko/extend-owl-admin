@@ -101,7 +101,8 @@ class LogServiceProvider
     }
 
     /**
-     * @return array
+     * @return array|null
+     * @throws \Illuminate\Container\EntryNotFoundException
      */
     public static function all()
     {
