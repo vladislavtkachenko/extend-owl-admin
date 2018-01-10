@@ -17,7 +17,7 @@ For Laravel < 5.5 after updating composer, add the service provider to the provi
 
 ### Orderable block with {image, title, description} 
 
-`AdminFormElement::orderableBlock('content', 'Контент')`
+`AdminFormElement::orderableBlock('content', 'Content')`
 
 ### Orderable images (only image)
 
@@ -27,7 +27,21 @@ In model
 
 In admin Section
 
-`AdminFormElement::orderableImages('content', 'Контент')`
+`AdminFormElement::orderableImages('content', 'Content')`
+
+### Color Picker
+
+onDisplay
+
+`AdminColumn::color('color', 'Color')`
+
+onCreate / onEdit
+
+`AdminFormElement::colorPicker('color', 'Color')`
+
+### Yandex Map
+
+`AdminFormElement::yandexMap('coords', 'Map')`
 
 ### Server info page: add to the navigation in Admin/navigation.php
 

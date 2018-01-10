@@ -3,9 +3,13 @@
 namespace VladislavTkachenko\Admin\Providers;
 
 use AdminFormElement;
+use AdminColumn;
 use Illuminate\Support\ServiceProvider;
+use VladislavTkachenko\Admin\Display\Color;
+use VladislavTkachenko\Admin\FormElements\ColorPicker;
 use VladislavTkachenko\Admin\FormElements\OrderableBlock;
 use VladislavTkachenko\Admin\FormElements\OrderableImages;
+use VladislavTkachenko\Admin\FormElements\YandexMap;
 use VladislavTkachenko\Admin\Widgets\NavigationUserBlock;
 use SleepingOwl\Admin\Contracts\Widgets\WidgetsRegistryInterface;
 
@@ -49,5 +53,9 @@ class ExtendOwlAdminServiceProvider extends ServiceProvider
 
         AdminFormElement::add('orderableBlock', OrderableBlock::class);
         AdminFormElement::add('orderableImages', OrderableImages::class);
+        AdminFormElement::add('colorPicker', ColorPicker::class);
+        AdminFormElement::add('yandexMap', YandexMap::class);
+
+        AdminColumn::add('color', Color::class);
     }
 }

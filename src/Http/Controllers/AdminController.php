@@ -15,7 +15,7 @@ class AdminController
      */
     public function server()
     {
-        $content = view('vladislavtkachenko::server');
+        $content = view('vladislavtkachenko::pages.server');
         return AdminSection::view($content, 'Информация о web-сервере');
     }
 
@@ -51,7 +51,7 @@ class AdminController
             return redirect(request()->url());
         }
 
-        $content = view('vladislavtkachenko::log', [
+        $content = view('vladislavtkachenko::pages.log', [
             'logs' => LogServiceProvider::all(),
             'files' => LogServiceProvider::getFiles(true),
             'current_file' => LogServiceProvider::getFileName()
@@ -67,7 +67,7 @@ class AdminController
     public function showRobots()
     {
         $robots = file_get_contents(public_path('robots.txt'));
-        $content = view('vladislavtkachenko::robots', compact('robots'));
+        $content = view('vladislavtkachenko::pages.robots', compact('robots'));
 
         return AdminSection::view($content, 'Редактирование robots.txt');
     }

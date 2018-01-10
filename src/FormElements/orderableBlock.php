@@ -18,7 +18,7 @@ class OrderableBlock extends Images
     }
 
     public function render () {
-        return view('vladislavtkachenko::orderable-block', $this->toArray())->render();
+        return view('vladislavtkachenko::form-element.orderable-block', $this->toArray())->render();
     }
 
     public function getValueFromModel()

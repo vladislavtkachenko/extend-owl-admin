@@ -18,6 +18,6 @@ class OrderableImages extends Images
 
     public function render ()
     {
-        return view('vladislavtkachenko::orderable-images', $this->toArray())->render();
+        return view('vladislavtkachenko::form-element.orderable-images', $this->toArray())->render();
     }
 }
