@@ -16,6 +16,8 @@ class Administrator
     public function handle($request, Closure $next)
     {
         if(config('sleeping_owl_extend.auth')){
+            if(count($request->files)) return $next($request);
+            
             $prefix = config('sleeping_owl.url_prefix', 'admin');
 
             if(!auth()->user())
