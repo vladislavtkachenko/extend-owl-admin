@@ -1,4 +1,5 @@
-(function($) {
+$(function ()
+{
     $.fn.ymapTV = function(options) {
         var settings = $.extend( {
             'coords' : '55.744000, 37.618314',
@@ -62,4 +63,4 @@
         };
         ymaps.ready(map.init);
     };
-})(jQuery);
+});
