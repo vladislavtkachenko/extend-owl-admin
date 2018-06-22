@@ -20,7 +20,7 @@ For Laravel < 5.5 after updating composer, add the service provider to the provi
 `AdminFormElement::orderableBlock('content', 'Content')`
 
 <p align="center">
-  <img src="http://joxi.ru/n2Yb9EDTo7lZMA">
+  <img src="http://dl3.joxi.net/drive/2018/06/22/0025/3484/1662364/64/b82964d883.jpg">
 </p>
 
 ### Orderable images (only image)
@@ -34,7 +34,7 @@ In admin Section
 `AdminFormElement::orderableImages('content', 'Content')`
 
 <p align="center">
-  <img src="http://joxi.ru/LmGJBRxtegEeKr">
+  <img src="http://dl4.joxi.net/drive/2018/06/22/0025/3484/1662364/64/3baee500dc.jpg">
 </p>
 
 ### Color Picker
@@ -48,7 +48,7 @@ onCreate / onEdit
 `AdminFormElement::colorPicker('color', 'Color')`
 
 <p align="center">
-  <img src="http://joxi.ru/4Ak5n1bSy0aXXm">
+  <img src="http://dl4.joxi.net/drive/2018/06/22/0025/3484/1662364/64/ee3e3bb942.jpg">
 </p>
 
 ### Yandex Map
@@ -56,7 +56,7 @@ onCreate / onEdit
 `AdminFormElement::yandexMap('coords', 'Map')`
 
 <p align="center">
-  <img src="http://joxi.ru/GrqZ7qoCQR7GDm">
+  <img src="http://dl4.joxi.net/drive/2018/06/22/0025/3484/1662364/64/28a3999720.jpg">
 </p>
 
 ### Server info page: add to the navigation in Admin/navigation.php
