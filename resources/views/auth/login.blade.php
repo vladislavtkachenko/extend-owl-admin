@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Авторизация</title>
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <link rel="stylesheet" href="{{ asset('vendor/vladislavtkachenko/css/auth/login.css') }}">
+        <link rel="stylesheet" href="{{ asset('packages/vladislavtkachenko/css/auth/login.css') }}">
     </head>
     <body>
         <div class="flex-center full-height">

@@ -9,8 +9,8 @@ class YandexMap extends NamedFormElement
 {
     public function initialize()
     {
-        Meta::addJs('admin-custom-js-yamap-api', asset('vendor/vladislavtkachenko/js/yandex-map/ya-api.js'), ['admin-default']);
-        Meta::addJs('admin-custom-js-yamap', asset('vendor/vladislavtkachenko/js/yandex-map/yandex-map.js'), ['admin-default']);
+        Meta::addJs('admin-custom-js-yamap-api', asset('packages/vladislavtkachenko/js/yandex-map/ya-api.js'), ['admin-default']);
+        Meta::addJs('admin-custom-js-yamap', asset('packages/vladislavtkachenko/js/yandex-map/yandex-map.js'), ['admin-default']);
     }
 
     public function render ()

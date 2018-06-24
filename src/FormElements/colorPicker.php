@@ -19,10 +19,10 @@ class ColorPicker extends NamedFormElement
 
     public function initialize()
     {
-        Meta::addCss('admin-custom-css-colorpicker', asset('vendor/vladislavtkachenko/css/color-picker/bootstrap-colorpicker.css'), ['admin-default']);
+        Meta::addCss('admin-custom-css-colorpicker', asset('packages/vladislavtkachenko/css/color-picker/bootstrap-colorpicker.css'), ['admin-default']);
 
-        Meta::addJs('admin-custom-js-colorpicker', asset('vendor/vladislavtkachenko/js/color-picker/bootstrap-colorpicker.min.js'), ['admin-default']);
-        Meta::addJs('admin-custom-js-colorpicker-js', asset('vendor/vladislavtkachenko/js/color-picker/color-picker.js'), ['admin-default']);
+        Meta::addJs('admin-custom-js-colorpicker', asset('packages/vladislavtkachenko/js/color-picker/bootstrap-colorpicker.min.js'), ['admin-default']);
+        Meta::addJs('admin-custom-js-colorpicker-js', asset('packages/vladislavtkachenko/js/color-picker/color-picker.js'), ['admin-default']);
     }
 
     public function render () {

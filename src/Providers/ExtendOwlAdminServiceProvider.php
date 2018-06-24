@@ -29,7 +29,7 @@ class ExtendOwlAdminServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/../../resources/views', 'vladislavtkachenko');
 
         $this->publishes([
-            __DIR__.'/../../assets' => public_path('vendor/vladislavtkachenko'),
+            __DIR__.'/../../assets' => public_path('packages/vladislavtkachenko'),
         ], 'assets');
 
         $this->publishes([

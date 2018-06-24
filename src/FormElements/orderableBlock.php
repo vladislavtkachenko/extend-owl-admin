@@ -10,11 +10,11 @@ class OrderableBlock extends Images
 {
     public function initialize()
     {
-        Meta::addCss('admin-custom-css-sort', asset('vendor/vladislavtkachenko/css/orderable-block/orderable-block.css'), ['admin-default']);
+        Meta::addCss('admin-custom-css-sort', asset('packages/vladislavtkachenko/css/orderable-block/orderable-block.css'), ['admin-default']);
 
-        Meta::addJs('admin-custom-js-sort', asset('vendor/vladislavtkachenko/js/vendor/flow.min.js'), ['admin-default']);
-        Meta::addJs('admin-custom-js-sort-2', asset('vendor/vladislavtkachenko/js/vendor/Sortable.min.js'), ['admin-default']);
-        Meta::addJs('admin-custom-js-sort-3', asset('vendor/vladislavtkachenko/js/orderable-block/orderable-block.js'), ['admin-default']);
+        Meta::addJs('admin-custom-js-sort', asset('packages/vladislavtkachenko/js/vendor/flow.min.js'), ['admin-default']);
+        Meta::addJs('admin-custom-js-sort-2', asset('packages/vladislavtkachenko/js/vendor/Sortable.min.js'), ['admin-default']);
+        Meta::addJs('admin-custom-js-sort-3', asset('packages/vladislavtkachenko/js/orderable-block/orderable-block.js'), ['admin-default']);
     }
 
     public function render () {

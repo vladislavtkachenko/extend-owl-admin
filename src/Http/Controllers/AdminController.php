@@ -26,10 +26,10 @@ class AdminController
      */
     public function log()
     {
-        Meta::addCss('admin-custom-css-sort', asset('vendor/vladislavtkachenko/css/logs/logs.css'), ['admin-default']);
-        Meta::addJs('admin-custom-js-logs-dt', asset('vendor/vladislavtkachenko/js/logs/dataTables.min.js'), ['admin-default']);
-        Meta::addJs('admin-custom-js-logs-dt-bstr', asset('vendor/vladislavtkachenko/js/logs/dt-bootstrap.js'), ['admin-default']);
-        Meta::addJs('admin-custom-js-logs', asset('vendor/vladislavtkachenko/js/logs/logs.js'), ['admin-default']);
+        Meta::addCss('admin-custom-css-sort', asset('packages/vladislavtkachenko/css/logs/logs.css'), ['admin-default']);
+        Meta::addJs('admin-custom-js-logs-dt', asset('packages/vladislavtkachenko/js/logs/dataTables.min.js'), ['admin-default']);
+        Meta::addJs('admin-custom-js-logs-dt-bstr', asset('packages/vladislavtkachenko/js/logs/dt-bootstrap.js'), ['admin-default']);
+        Meta::addJs('admin-custom-js-logs', asset('packages/vladislavtkachenko/js/logs/logs.js'), ['admin-default']);
 
         if (request()->input('l')) {
             LogServiceProvider::setFile(base64_decode(request()->input('l')));
