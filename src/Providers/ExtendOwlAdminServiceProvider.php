@@ -30,7 +30,7 @@ class ExtendOwlAdminServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__.'/../../assets' => public_path('vendor/vladislavtkachenko'),
-        ], 'public');
+        ], 'assets');
 
         $this->publishes([
             __DIR__.'/../../config/sleeping_owl_extend.php' => config_path('sleeping_owl_extend.php'),
