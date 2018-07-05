@@ -1,9 +1,3 @@
-<li @if(!$user)style="margin-right: 20px;"@endif>
-    <a href="/" target="_blank">
-        @lang('sleeping_owl::lang.links.index_page')
-    </a>
-</li>
-
 @if ($user)
     <li class="dropdown user user-menu" style="margin-right: 20px;">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
