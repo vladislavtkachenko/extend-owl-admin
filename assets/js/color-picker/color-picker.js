@@ -1,4 +1,3 @@
 $(function () {
-    $('#color-picker-component').colorpicker();
+    $('.js-color-picker-component').colorpicker();
 });
-
